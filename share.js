@@ -7,7 +7,7 @@
 6. Type the following into the console and hit Enter to run script: share()
 */
 
-let x = document.querySelectorAll('a.share');
+let x = document.querySelectorAll('.social-action-bar__share');
 
 function pause() {
     let delay = 1500 + (Math.random() * 3500);
@@ -19,7 +19,7 @@ async function share() {
         await pause();
         listing.click()
         await pause();
-        let y = document.querySelector('div.share-wrapper-con')
+        let y = document.querySelector('.share-wrapper-container')
         y.click()
     }
 }
