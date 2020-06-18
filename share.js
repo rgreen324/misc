@@ -7,7 +7,7 @@
 6. Type the following into the console and hit Enter to run script: share()
 */
 
-let x = document.querySelectorAll('.listing-actions-con .share');
+let x = document.querySelectorAll('.social-action-bar__share');
 
 function pause() {
     let delay = 1500 + (Math.random() * 3500);
