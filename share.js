@@ -7,19 +7,19 @@
 6. Type the following into the console and hit Enter to run script: share()
 */
 
-let x = document.querySelectorAll('.social-action-bar__share');
+const shareButtons = document.querySelectorAll('.social-action-bar__share');
 
 function pause() {
-    let delay = 1500 + (Math.random() * 3500);
-    return new Promise(resolve => setTimeout(resolve, delay));
+  const delay = 1500 + Math.random() * 1500;
+  return new Promise((resolve) => setTimeout(resolve, delay));
 }
 
 async function share() {
-    for (const listing of x) {
-        await pause();
-        listing.click()
-        await pause();
-        let y = document.querySelector('.internal-shares li a')
-        y.click()
-    }
+  for (const shareButton of shareButtons) {
+    await pause();
+    shareButton.click();
+    await pause();
+    const confirmButton = document.querySelector('.internal-shares li a');
+    confirmButton.click();
+  }
 }
