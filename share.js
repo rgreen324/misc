@@ -4,7 +4,7 @@
 3. Keep scrolling to the bottom of the page until all listings are loaded
 4. Open browser console
 5. Copy/paste code into console and hit Enter
-6. Type the following into the console and hit Enter to run script: share()
+6. Type the following into the console and hit Enter to run script: share();
 */
 
 const shareButtons = document.querySelectorAll('.social-action-bar__share');
